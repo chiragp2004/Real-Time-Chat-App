@@ -74,9 +74,7 @@ Method | Endpoint | Description
 GET | /api/health | Check backend server health
 GET | /api/rooms | Get list of active chat rooms
 
-📸 Preview
 
-(Add screenshots or demo GIFs here)
 
 🧑‍💻 Author
 
