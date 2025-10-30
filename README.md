@@ -1,16 +1,89 @@
-# React + Vite
+💬 Real-Time Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack real-time chat app built with React (frontend) and Node.js + Socket.io (backend).
+This app allows users to join chat rooms, send and receive messages instantly, see who’s online, and display typing indicators — all in real-time.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Real-time messaging using Socket.IO
 
-## React Compiler
+Join chat rooms by unique room ID or name
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Show active users in each room
 
-## Expanding the ESLint configuration
+Typing indicators
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Multiple users chat simultaneously
+
+Responsive and clean UI built with Tailwind CSS
+
+Backend API endpoints for rooms and health check
+
+🧩 Tech Stack
+
+Frontend: React + Vite + TailwindCSS + Socket.io-client
+Backend: Node.js + Express + Socket.io + CORS
+
+📁 Folder Structure
+
+real-time-chat-app/
+├── frontend/ (React App)
+│ ├── src/
+│ ├── package.json
+│ └── vite.config.js
+│
+├── backend/ (Node.js + Socket.io Server)
+│ ├── index.js
+│ ├── package.json
+│ └── ...
+│
+└── README.md
+
+⚙️ Setup Instructions
+1. Clone the Repository
+
+git clone https://github.com/
+<your-username>/real-time-chat-app.git
+cd real-time-chat-app
+
+2. Setup Backend
+
+cd backend
+npm install
+npm start
+
+Server will start at http://localhost:4000
+
+3. Setup Frontend
+
+Open a new terminal:
+cd frontend
+npm install
+npm run dev
+
+Frontend runs at http://localhost:5173
+
+🌐 Environment Variables (Optional for Deployment)
+
+Create a .env file in your frontend folder:
+VITE_SERVER_URL=https://your-backend-domain.com
+
+🧠 API Endpoints
+
+Method | Endpoint | Description
+GET | /api/health | Check backend server health
+GET | /api/rooms | Get list of active chat rooms
+
+📸 Preview
+
+(Add screenshots or demo GIFs here)
+
+🧑‍💻 Author
+
+Name: Chirag Pandhare
+Tech: React, Node.js, Socket.io
+GitHub: https://github.com/chiragpandhare
+
+🛡️ License
+
+This project is licensed under the MIT License © 2025 Chirag Pandhare
